@@ -1,5 +1,5 @@
 from pyrogram import idle
-from . import bo
+from . import bot
 bot.start()
 idle()
 bot.stop()
