@@ -1,4 +1,4 @@
-import os
+import o
 
 class Config:
     TELEGRAM_TOKEN=os.environ['TELEGRAM_TOKEN']
