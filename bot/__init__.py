@@ -36,9 +36,9 @@ def main(_, msg: Message):
                 if not member.can_manage_chat:
                     bot.ban_chat_member(chat_id=msg.chat.id, user_id=member.user.id)
                     count_kicks += 1
-            zaid.edit("Banned Total {}".format(count_kicks))
+            zaid.edit(f"Banned Total {count_kicks}")
         except Exception as e:
-            zaid.edit('failed to kicked {}'.format(str(e)))
+            zaid.edit(f'failed to kicked {str(e)}')
     else:
         zaid.edit("i need to be admin In This Group To Perform This Action!")
 
